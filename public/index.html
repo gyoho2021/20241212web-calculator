@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="history" onclick="toggleHistoryExpanded()"></div>
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="appendKey('7')">7</button>
+            <button onclick="appendKey('8')">8</button>
+            <button onclick="appendKey('9')">9</button>
+            <button onclick="appendKey('+')">+</button>
+            <button onclick="appendKey('4')">4</button>
+            <button onclick="appendKey('5')">5</button>
+            <button onclick="appendKey('6')">6</button>
+            <button onclick="appendKey('-')">-</button>
+            <button onclick="appendKey('1')">1</button>
+            <button onclick="appendKey('2')">2</button>
+            <button onclick="appendKey('3')">3</button>
+            <button onclick="appendKey('×')">×</button>
+            <button onclick="appendKey('0')">0</button>
+            <button onclick="clearAll()">C</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendKey('÷')">÷</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
